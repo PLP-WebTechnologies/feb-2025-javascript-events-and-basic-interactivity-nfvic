@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Handling Fun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to the JS Playground</h1>
+  </header>
+
+  <main>
+    <!-- EVENT HANDLING -->
+    <section>
+      <button id="colorBtn">Click me to change my color</button>
+      <p id="hoverText">Hover over me!</p>
+      <input type="text" id="keyInput" placeholder="Type something..." />
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS -->
+    <section>
+      <h2>📸 Image Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/150" id="galleryImg" />
+        <br />
+        <button id="nextImgBtn">Next Image</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>📑 Tabs</h2>
+      <div class="tabs">
+        <button onclick="showTab('tab1')">Tab 1</button>
+        <button onclick="showTab('tab2')">Tab 2</button>
+        <div id="tab1" class="tab-content">This is Tab 1 content.</div>
+        <div id="tab2" class="tab-content" style="display:none;">This is Tab 2 content.</div>
+      </div>
+    </section>
+
+    <!-- FORM VALIDATION -->
+    <section>
+      <h2>📋 Sign Up</h2>
+      <form id="signupForm">
+        <input type="email" id="email" placeholder="Email" required /><br />
+        <input type="password" id="password" placeholder="Password" required /><br />
+        <button type="submit">Submit</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2025 JavaScript Playground</footer>
+  <script src="script.js"></script>
+</body>
+</html>
